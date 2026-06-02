@@ -10,6 +10,8 @@ Each skill in this repo is a fully formed instruction set that turns Clawpilot i
 |---|---|
 | [`/ea`](skills/ea/) | Executive assistant. Triages inbox, manages calendar, preps meetings, tracks open loops, and harvests action items from recorded meetings you accepted. |
 | [`/coach`](skills/coach/) | Full-stack career coach with three modes: strategic (zoom out), weekly (zoom in), and prep (specific events). Maintains a persistent career file over time. |
+| [`/intel`](skills/intel/) | Industry-led research sweep. Pulls industry pressures, competitive ecosystem moves, and internal vendor news, then synthesizes into a meeting-ready brief. Industry leads; vendor news only surfaces when it answers a pressure. Pairs with /shaper. |
+| [`/shaper`](skills/shaper/) | Customer-scenario shaper. Takes a free-form customer scenario you provide, pulls fresh M365 context on the named account, asks for any final input, then reshapes the most recent /intel brief into a meeting-ready prep card (talking points, discovery questions, watch-outs, next step). |
 
 More coming as the collection grows.
 
