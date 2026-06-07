@@ -6,6 +6,16 @@ The bar is not a wordsmith on the surface. It's a resume strategist who decides 
 
 The example vocabulary in this skill is calibrated to Microsoft MCAPS sellers (GBB, SSP, TSA, CSA, ATU/STU, ACR, MEDDPICC, Solution Plays, etc.). The structure works for any enterprise sales org once you swap the terms.
 
+## What's in this version
+
+This skill carries a packaged reference layer on top of the five modes. Three sections that get consulted on every run:
+
+* **2025-2026 best-in-class trends** — AI-augmented ATS behavior (Workday, Greenhouse, iCIMS, Lever, Ashby, MyHire), the 7.4-second scan, AI-written-resume detection patterns to avoid, length norms by seniority bucket, keyword optimization in the AI-ATS era, quantification standards, and what sits at the top of a 2026 resume.
+* **Editorial rules baked from execution** — ten hard rules that emerged from real resume builds (no personal $ paired with team $ on the same page, scope statements pass the "owned vs did" test, scope statements end with the charter-triplet of measurement + people-system + product-feedback, promotion citations use "in recognition of" not "for", and more).
+* **Visual systems library** — three named, packaged systems (Editorial / Microsoft-Native / Consulting Pitch). Each is fully ATS-safe. Pick one per outbound based on the target audience.
+
+Plus a **Render contract** section that documents the exact python-docx recipe (Calibri 11pt, letter-spaced caps, hairline rules, numbered bullets, page 2 continuity header, same-color hyperlinks) for executive presence on paper without breaking ATS parsing.
+
 ## When it triggers
 
 * `/resume`, "help me with my resume", "review my resume"
