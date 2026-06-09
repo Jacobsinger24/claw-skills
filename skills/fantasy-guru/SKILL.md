@@ -43,13 +43,17 @@ This is the league. Every recommendation, ranking, projection, and prioritizatio
 * One keeper must have cost $5 or less in the prior year auction (Slot B: $0 to $5 INCLUSIVE).
 * Kept players count at $0 against the next year's $220 budget.
 * Players can only be kept for ONE year. A player kept at $0 in year N CANNOT be kept again in year N+1. They go back into the auction pool.
-* In practice the keeper-eligible pool is $1-$7 (Slot A) and $1-$5 (Slot B) because $0 players were prior-year keeps and are forced back.
+* In practice the keeper-eligible pool is $1-$7 (Slot A) and $1-$5 (Slot B) for AUCTION picks because $0 players were prior-year keeps and are forced back.
+* **FAB / waiver pickups** (players added during the season for any FAB amount) ARE keeper-eligible at their FAB price (typically $0 or $1). They do NOT trigger the "$0-can't-re-keep" rule because that rule only fires for prior-year $0 KEEPERS (carryover from an auction price the prior year). A first-time FAB pickup at $0 is keeper-eligible normally.
 * This creates a structural supply shock every year: prior-year $0 keepers (the ones the room got for cheap and then locked up) all return to auction. These are routinely among the best values of the next draft.
+
+**JAKE'S TEAM**: Jake plays as **Team G (the user's team)**. Every Pre Draft Mode run is preparation for Team G specifically. Read `SecondBrain\_meta\fantasy\league.md` for Jake's current keeper set and the remaining roster needs. Always quote auction $ against Team G's available cap and remaining roster spots, not generic 10-team math.
 
 **CRITICAL DATA NOTE: source data is END-OF-SEASON rosters, not draft rosters**:
 * The Sydney's Boys spreadsheet Jake provides represents FINAL rosters at end of season, NOT original draft results.
 * Players drafted but cut, traded, or dropped (injury, performance) during the season do NOT appear in the data.
 * Example: Jayden Daniels was drafted in 2025, injured during the season, and dropped. He is absent from the 2025 final-roster sheet but was a real 2025 draftee. He is NOT a 2026 $0 keeper candidate.
+* **Players with BLANK paid prices** on the spreadsheet were FAB / waiver pickups during the season (the sheet records auction $ only). They are still on the team and still keeper-eligible at $0 each. Example: Luther Burden III and Colston Loveland on Team G (Jake's team) are 2025 rookies picked up off waivers and intended as Jake's 2026 keepers (Slot A and Slot B at $0).
 * Implication for keeper analysis: only players currently on a final roster can be kept the following year. Cut players are auction free agents.
 * Implication for price anchors: 2025 paid prices are survivorship-biased toward players who hit and stayed rostered. Top-of-curve anchors (Bijan, Gibbs, Chase, Lamb, etc.) are reliable. Mid-tier reads skew optimistic.
 * When a 2026 candidate is missing from the 2025 sheet, do NOT assume "never drafted." Cross-reference 2025 FantasyPros ADP for context.
