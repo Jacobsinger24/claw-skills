@@ -47,7 +47,7 @@ This is the league. Every recommendation, ranking, projection, and prioritizatio
 * **FAB / waiver pickups** (players added during the season for any FAB amount) ARE keeper-eligible at their FAB price (typically $0 or $1). They do NOT trigger the "$0-can't-re-keep" rule because that rule only fires for prior-year $0 KEEPERS (carryover from an auction price the prior year). A first-time FAB pickup at $0 is keeper-eligible normally.
 * This creates a structural supply shock every year: prior-year $0 keepers (the ones the room got for cheap and then locked up) all return to auction. These are routinely among the best values of the next draft.
 
-**JAKE'S TEAM**: Jake plays as **Team G (the user's team)**. Every Pre Draft Mode run is preparation for Team G specifically. Read `SecondBrain\_meta\fantasy\league.md` for Jake's current keeper set and the remaining roster needs. Always quote auction $ against Team G's available cap and remaining roster spots, not generic 10-team math.
+**JAKE'S TEAM**: Jake plays as **Team G (Team G)**. Every Pre Draft Mode run is preparation for Team G specifically. Read `SecondBrain\_meta\fantasy\league.md` for Jake's current keeper set and the remaining roster needs. Always quote auction $ against Team G's available cap and remaining roster spots, not generic 10-team math.
 
 **CRITICAL DATA NOTE: source data is END-OF-SEASON rosters, not draft rosters**:
 * The Sydney's Boys spreadsheet Jake provides represents FINAL rosters at end of season, NOT original draft results.
@@ -80,6 +80,49 @@ This is the league. Every recommendation, ranking, projection, and prioritizatio
    * Stars and Scrubs leaning: roughly $160 to $180 on starters, $40 to $60 spread across bench upside and a QB3.
    * Balanced: $140 to $160 on starters with stronger middle depth.
    * Never end the auction with more than $10 unspent unless Jake explicitly said to save for in season FAB.
+
+## Team G Build Doctrine (canon — overrides generic guidance for every Pre-Draft Mode run)
+
+Jake plays Team G. He has articulated four pillars (locked 9 June 2026). Treat these as binding constraints when building any Team G Pre-Draft recommendation. They sit ON TOP of the room calibration and the strategic implications above; where they conflict, the doctrine wins for Team G specifically.
+
+### Pillar 1 — QB is the VALUE position, never overpay
+- Target the **QB12-QB20 ECR range**, not the elite tier.
+- **Total QB cap: under $35** combined across all three QBs.
+- **Roster 3 QBs**: 2 starters + 1 backup. QB3 must come in at **$5 or less, ideally $2-$3**.
+- The lens is **"which QBs outperform their ADP?"** Sydney's Boys already underpays QB 25-35%; Jake doubles the discount and reallocates the savings.
+- Every dollar saved on QB flows to WR1/WR2/WR3 and the RB1 anchor.
+
+### Pillar 2 — WR > RB at the draft (RBs come on the wire)
+Strategic truth: serviceable RBs surface on waivers every season. Surprise WRs do not. Make WR bets at the draft; don't try to find them mid-season.
+
+**End-of-draft positional-rank targets (firm — drives bidding aggression):**
+- **Running backs (4 total)**: 2 in top RB22, 3 in top RB30, 4 in top RB35.
+- **Wide receivers (5 total)**: 3 in top WR15, 4 in top WR20, 5 in top WR30.
+
+Push price on top-WR15 slots. Walk away from any RB outside top RB22.
+
+### Pillar 3 — 2nd and 3rd year WRs are prime breakout candidates
+Bias mid-round WR spend toward Year 2 and Year 3 receivers with ascending target share. This is where WR3-with-WR1-upside lives.
+
+- **Year 2 in 2026** (drafted 2025): Tetairoa McMillan, Travis Hunter, Emeka Egbuka, Matthew Golden, Jayden Higgins, Tre Harris, Jordyn Tyson, Carnell Tate, Luther Burden (Team G keeper).
+- **Year 3 in 2026** (drafted 2024): Malik Nabers, Brian Thomas Jr., Rome Odunze, Marvin Harrison Jr., Ladd McConkey, Adonai Mitchell, Xavier Worthy, Keon Coleman, Ja'Lynn Polk, Jameson Williams. (Pearsall = Year 3 but kept by Team I.)
+
+When two players are roughly equivalent on ECR, the Year 2-3 WR wins.
+
+### Pillar 4 — Team G 2026 roster shape
+- **3 QB** (2 start + 1 bench, total ≤$35, QB3 ≤$5).
+- **5 WR** including Burden keeper (4 from auction; start 4, bench 1).
+- **4 RB** (start 3, bench 1).
+- **1-2 TE** including Loveland keeper. **Loveland is bench / W-T fallback, NOT a locked starter.** A 2nd TE only if price collapses below $3.
+- **Starting lineup**: 2 QB + 4 WR + 3 RB = 9 starters. W-T slot is filled by a WR (Burden or auction WR), not by Loveland.
+- **6 bench spots** = Loveland + QB3 + 1 bench WR + 1 bench RB + 2 lottery / late-round darts.
+
+**Cap allocation midpoint:**
+- 3 QB: ~$25 ($12 + $10 + $3) — under the $35 cap.
+- 5 WR: ~$115 ($50 + $32 + $24 + $9 + $0 Burden keeper).
+- 4 RB: ~$73 ($40 + $22 + $8 + $3).
+- Bench/lottery: ~$7 + Loveland keeper $0.
+- Total: ~$220.
 
 ## Room calibration model (Sydney's Boys)
 
