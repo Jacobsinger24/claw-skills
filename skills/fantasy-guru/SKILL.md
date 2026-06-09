@@ -37,15 +37,29 @@ This is the league. Every recommendation, ranking, projection, and prioritizatio
 **Bench**: 6 spots. No kicker. No defense.
 **Total roster size**: 15.
 
-**Keeper rules (2026 forward, confirmed by Jake 9 June 2026 - LOOSE INTERPRETATION)**:
-* Each team keeps 2 players each year.
-* One keeper must have cost $7 or less in the prior year auction (Slot A: $0 to $7 INCLUSIVE).
-* One keeper must have cost $5 or less in the prior year auction (Slot B: $0 to $5 INCLUSIVE).
+**Keeper rules (2026 forward, confirmed by Jake 9 June 2026 - LOOSE INTERPRETATION + TRADE mechanic)**:
+* Each team selects up to 2 keepers each year. A keeper "slot" is a roster selection, NOT a fixed player — slots can be sold/traded.
+* Slot A: keeper must have cost **$0 to $7** in the prior year auction (INCLUSIVE max $7), OR be a $0 in-season FAB pickup.
+* Slot B: keeper must have cost **$0 to $5** in the prior year auction (INCLUSIVE max $5), OR be a $0 in-season FAB pickup.
 * Kept players count at $0 against the next year's $220 budget.
 * Players can only be kept for ONE year. A player kept at $0 in year N CANNOT be kept again in year N+1. They go back into the auction pool.
 * In practice the keeper-eligible pool is $1-$7 (Slot A) and $1-$5 (Slot B) for AUCTION picks because $0 players were prior-year keeps and are forced back.
-* **FAB / waiver pickups** (players added during the season for any FAB amount) ARE keeper-eligible at their FAB price (typically $0 or $1). They do NOT trigger the "$0-can't-re-keep" rule because that rule only fires for prior-year $0 KEEPERS (carryover from an auction price the prior year). A first-time FAB pickup at $0 is keeper-eligible normally.
-* This creates a structural supply shock every year: prior-year $0 keepers (the ones the room got for cheap and then locked up) all return to auction. These are routinely among the best values of the next draft.
+* **FAB / waiver pickups** (players added during the season for any FAB amount) ARE keeper-eligible at $0. They do NOT trigger the "$0-can't-re-keep" rule because that rule only fires for prior-year $0 KEEPERS (carryover from an auction price the prior year). A first-time FAB pickup at $0 is keeper-eligible normally.
+* This creates a structural supply shock every year: prior-year $0 keepers all return to auction. These are routinely among the best values of the next draft.
+
+**Keeper TRADE mechanic (CRITICAL — affects auction supply):**
+* Teams can SELL the rights to a keeper to another team in exchange for auction draft dollars (out of the buyer's $220 budget).
+* When a keeper is sold: the seller LOSES one of their two keeper selections (the slot is consumed by the sale), and gains the negotiated cash on top of their $220.
+* The buyer acquires the player at $0 against their roster but PAYS the negotiated cash out of their $220.
+* Net result: the keeper PLAYER is OFF the auction board (pre-assigned to the new owner), and cash redistributes between the two teams.
+* When considering whether Team G should sell a keeper: only sell if offer significantly exceeds the player's projected auction value (e.g., Burden auction value ~$25-30, only sell at $30+).
+
+**Market shortage implication (always apply when pricing the auction pool):**
+* All kept players (each team's 0-2 selections, plus any acquired via trade) are PRE-ASSIGNED and **NOT IN THE AUCTION POOL**.
+* The 10-team league fields 150 rostered players. If 18-20 are kept (avg 1.8-2.0/team), the auction pool shrinks from ~150 to ~130 names.
+* Total league cash stays at $2,200 (less keeper-trade transfers), so the same money chases ~13% fewer players → **structural inflation at the top of every position where keepers concentrate.**
+* For 2026: WR has heavy keeper concentration (Burden, Pearsall, Olave, Godwin + Slot B WRs), RB has moderate (Dobbins, Warren, Skattebo, Judkins), QB is mid (Purdy, Lawrence, Cam Ward, possibly Stafford/Rodgers Slot B).
+* Adjust target $ up 10-15% for WR1-WR3 tier this year specifically due to the keeper-shortage compounding.
 
 **JAKE'S TEAM**: Jake plays as **Team G (Team G)**. Every Pre Draft Mode run is preparation for Team G specifically. Read `SecondBrain\_meta\fantasy\league.md` for Jake's current keeper set and the remaining roster needs. Always quote auction $ against Team G's available cap and remaining roster spots, not generic 10-team math.
 
@@ -117,12 +131,19 @@ When two players are roughly equivalent on ECR, the Year 2-3 WR wins.
 - **Starting lineup**: 2 QB + 4 WR + 3 RB = 9 starters. W-T slot is filled by a WR (Burden or auction WR), not by Loveland.
 - **6 bench spots** = Loveland + QB3 + 1 bench WR + 1 bench RB + 2 lottery / late-round darts.
 
-**Cap allocation midpoint:**
-- 3 QB: ~$25 ($12 + $10 + $3) — under the $35 cap.
-- 5 WR: ~$115 ($50 + $32 + $24 + $9 + $0 Burden keeper).
-- 4 RB: ~$73 ($40 + $22 + $8 + $3).
-- Bench/lottery: ~$7 + Loveland keeper $0.
-- Total: ~$220.
+### Pillar 5 — Hard bench cap: ≤$12 TOTAL across all 6 bench slots
+- **Binding constraint, not a guideline.** Bench inflation is the #1 way a Sydney's Boys auction goes sideways for Jake.
+- Loveland keeper $0 eats one bench slot for free. Remaining 5 slots split ≤$12.
+- Typical split: QB3 $2-5 + bench WR $2-4 + bench RB $1-3 + 2 lottery darts $1-2 each.
+- If a bench player's price exceeds the implied per-slot cap, walk away unless another bench slot is already locked at $1.
+- **Implication: all cap savings flow to STARTERS, not bench.** No "sleeper at $8" plays — that's a starter price, not a bench price. A $9 player needs to either start (move into the starting 9) or get cut.
+
+**Cap allocation midpoint (total ~$220):**
+- 3 QB: ~$22 ($10 + $9 + $3) — under the $35 cap, includes QB3 on bench.
+- 5 WR: ~$132 ($50 + $32 + $24 + $26 starters + $0 Burden keeper). Bench WR rolled into the $12 bench cap.
+- 4 RB: ~$76 ($40 + $22 + $14 starters + $0-3 bench RB).
+- Bench cap (Pillar 5): **≤$12 total** across 6 slots (Loveland $0 + QB3 + bench WR + bench RB + 2 lottery = $12 max).
+- Cushion: $2-5 to avoid going to $0.
 
 ## Room calibration model (Sydney's Boys)
 
