@@ -68,9 +68,24 @@ Paired with official NFL/team announcements, injury reports, beat reporters, and
 
 If a source is unreachable on a run, the skill says so explicitly rather than silently falling back to stale priors.
 
+## What's in this version (v2)
+
+The `SKILL.md` in this repo is a **fully-worked example** anchored on a real 10-team Superflex Half PPR auction league (Sydney's Boys, $220 budget, 2-keeper rule). Owner team names have been swapped to Team A through Team J for privacy. Player names, prices, and calibration logic are real and instructive.
+
+Three additions over the previous version:
+
+### Room calibration model
+A formal framework for anchoring auction $ recommendations to your specific league's historical prices, not generic markets. The worked example shows how Sydney's Boys consistently underpays QBs by 25-35% versus generic Superflex consensus, and how that intelligence flips the optimal QB build (two Tier-2 QBs > one elite + a dart). To use in your league, replace the `Room calibration model` section with your own room's price curves once you have at least one prior draft to anchor on.
+
+### Workhorse identification framework
+A five-signal model for finding mid-tier players (RB13-36 / WR13-36) with ceiling outcomes: target share, designed touches, red zone usage, route participation, and snap-share trajectory. Players hitting 3+ signals qualify as workhorse-tier targets; 4+ are anchors; all 5 are league-winners. Persisted to `workhorse-board.md` and refreshed across runs.
+
+### Keeper landscape math
+For leagues with keepers, the skill tracks which prior-year cheap-keeper players cannot be re-kept and therefore return to auction. This creates a structural supply shock every year that is routinely underpriced by the room. The worked example shows the 2026 forced-back-to-auction list (Drake Maye, Brock Bowers, Bo Nix, Bucky Irving, Rome Odunze, Brian Thomas Jr., etc.) — every year your league should produce its own equivalent list.
+
 ## Customization (required before first use)
 
-The skill ships with placeholders for league settings. Before first invocation, fill in the **League context** block at the top of `SKILL.md` with your actual:
+The skill ships with the Sydney's Boys league context as a worked example. Before first invocation in your own league, replace the **League context** block at the top of `SKILL.md` with your actual:
 
 * League name
 * League type (1QB, Superflex, 2QB)
@@ -81,9 +96,13 @@ The skill ships with placeholders for league settings. Before first invocation, 
 * Bench size
 * Kicker / D-ST included or not
 * Draft date
+* Keeper rules (if any)
 * Competitive context (sharp room or casual)
+* Your league's owner names (or replace with Team A through Team N for privacy)
 
-Without these filled in, the skill cannot tailor recommendations to your actual edge.
+Then replace the **Room calibration model** section with your own room's historical price curves and per-owner spending profiles. If you do not have prior draft data, leave the Sydney's Boys priors as a starting point and update after your first auction.
+
+Without these filled in, the skill will quote Sydney's Boys-specific intelligence that may not match your league dynamics.
 
 ## Mode cutover
 
